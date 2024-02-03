@@ -8,7 +8,8 @@ const screen = h('div', [
   h('button', {onclick: () => {
     if (input.value) {
       sendmsg({msg: input.value})
-      screen.appendChild()
+      screen.appendChild(h('div', ['Sent: ' + input.value]))
+      input.value = ''
     }
   }}, ['Send'])
 ])
