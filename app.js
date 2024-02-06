@@ -16,7 +16,7 @@ const screen = h('div', [
 
 document.body.appendChild(screen)
 
-const config = {appId: 'testing4321'}
+const config = {appId: 'testing4321', password: 'password'}
 
 const room = joinRoom(config, 'testroom')
 
